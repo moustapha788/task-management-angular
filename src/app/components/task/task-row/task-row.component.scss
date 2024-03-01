@@ -1,0 +1,45 @@
+.task_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.task_text {
+display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.task_text>input{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.task_row_button {
+
+}
+.button_task{
+  margin:0 5px ;
+  background-color: transparent;
+  font-size:20px ;
+}
+.delete{
+color: #B31F43;
+}
+.edit{
+  color:#1F74B3;
+}
+
+.is-done{
+  text-decoration: line-through;
+}
+
+.note-input{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 200px;
+  outline: none;
+
+}

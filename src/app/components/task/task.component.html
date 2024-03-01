@@ -1,0 +1,21 @@
+<div class="task-card">
+  <div class="task_header">
+    <h1 class="title">Tasks</h1>
+    <button class="clear-button" (click)="onClear()">
+      <span>Clear</span>
+      <span><i class="fa-solid fa-rotate-right"></i></span>
+    </button>
+  </div>
+  <div class="task-content">
+    <form class="add-task-form">
+      <input class="text-input" value="{{textInput}}" [(ngModel)]="textInput" (input)="onChange($event)">
+      <button class="add-task-button" (click)="addTask()">add task</button>
+    </form>
+    <div class="task-list">
+      @for (task of taskService.tasks();track task) {
+        <app-task-row [task]="task"></app-task-row>
+      }
+    </div>
+  </div>
+</div>
+
